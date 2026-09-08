@@ -41,3 +41,11 @@ graph TD
     end
 
     Agent -->|Outbound HTTPS / Port 443| UD
+
+    | Phase | Proof of Concept Screenshot | Description |
+| :--- | :--- | :--- |
+| **1. AD Setup** | ![AD Users](./screenshots/01-ad-users-groups.png) | Active Directory OU structure, test accounts, and security groups in `iam-homelab.local`. |
+| **2. Agent Status** | ![Agent Operational](./screenshots/02-okta-agent-operational.png) | Active outbound TLS connection established by Okta AD Agent v3.23.0. |
+| **3. Import Match** | ![User Import](./screenshots/03-okta-user-import.png) | Exact match reconciliation between AD Domain user and Okta Universal Directory profile. |
+| **4. Active Profiles** | ![Active People](./screenshots/04-okta-active-people.png) | Fully provisioned user list in Okta displaying Active Directory source attributes. |
+| **5. Audit Logging** | ![System Log](./screenshots/05-okta-system-log.png) | Real-time audit logs confirming lifecycle state changes synced across systems. |
