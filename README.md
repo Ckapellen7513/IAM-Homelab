@@ -66,3 +66,24 @@ Universal Directory user list displaying synced Active Directory source attribut
 Okta System Log verifying automated user lifecycle and sync events:
 ![Okta System Log](./screenshots/05-okta-system-log.png)
 
+## Bi-Directional Password Workflows & System Log Signatures
+
+
+---
+
+
+## Bi-Directional Password Workflows & System Log Signatures
+
+To verify that identity data flows seamlessly in both directions between Okta OIE and on-premises Active Directory, use the following log signatures for auditing:
+
+| Direction | Workflow Type | Primary Actor | Key Event Signature | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **AD $\rightarrow$ Okta** | **Delegated Authentication** | `Active Directory Agent (AD_AGENT)` | `Authenticate user with AD agent` (`auth_via_AD_agent`) | Triggered when a user signs into Okta; Okta queries the on-premises domain controller via the agent to validate credentials. |
+| **Okta $\rightarrow$ AD** | **SSPR Writeback** | End-User (`Conner Kapellen (User)`) | `Perform user password reset by AD agent` (`reset_user_password`) | Triggered when a user resets their password in Okta; Okta commands the AD agent to push the new password down into Active Directory. |
+
+### Visual Log Reference
+
+* **Inbound / Auth Validation (`07-okta-delauth-success-log.png`):** Demonstrates AD verifying user credentials upward during sign-in.
+  ![Delegated Authentication Success Log](./screenshots/07-okta-delauth-success-log.png)
+* **Outbound / Writeback (`okta-sspr-success-log.png`):** Demonstrates Okta successfully executing an SSPR writeback down through the agent into the domain.
+  ![SSPR Writeback Success Log](./screenshots/08-okta-sspr-success-log.png)
