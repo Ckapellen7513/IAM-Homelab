@@ -2,7 +2,6 @@
 Hybrid Enterprise IAM Lab: Azure AD DS to Okta Identity Cloud Integration
 # Hybrid Enterprise IAM Lab: Azure AD DS to Okta Identity Cloud Integration
 
-![Architecture Diagram](./diagrams/hybrid-iam-architecture.png)
 
 ## Overview
 This project demonstrates the design, deployment, and configuration of an enterprise-grade hybrid identity architecture. An Active Directory Domain Services (AD DS) environment hosted on an Azure Virtual Machine serves as the primary Directory Source of Truth, integrated seamlessly with an Okta Identity Cloud tenant using the Okta AD Agent. 
