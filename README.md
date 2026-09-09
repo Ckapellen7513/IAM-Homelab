@@ -42,4 +42,24 @@ graph TD
 
     Agent -->|Outbound HTTPS / Port 443| UD
 
+## Proof of Concept & Evidence
 
+### 1. Active Directory Domain Controller Configuration
+Active Directory OU structure, service accounts, and test users in `iam-homelab.local`:
+![Active Directory Users](./screenshots/01-ad-users-groups.png)
+
+### 2. Okta AD Agent Connectivity
+Okta AD Agent v3.23.0 running on Azure VM with active outbound status:
+![Okta AD Agent Status](./screenshots/02-okta-agent-operational.png)
+
+### 3. User Reconciliation & Import
+Matching and confirmation of imported Active Directory identities in Okta:
+![Okta User Import](./screenshots/03-okta-user-import.png)
+
+### 4. Active Synced User Profiles
+Universal Directory user list displaying synced Active Directory source attributes:
+![Okta Active Profiles](./screenshots/04-okta-active-people.png)
+
+### 5. Audit Logging & System Events
+Okta System Log verifying automated user lifecycle and sync events:
+![Okta System Log](./screenshots/05-okta-system-log.png)
