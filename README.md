@@ -42,6 +42,9 @@ graph TD
 
     Agent -->|Outbound HTTPS / Port 443| UD
 
+---
+
+Markdown
 ## Proof of Concept & Evidence
 
 ### 1. Active Directory Domain Controller Configuration
@@ -60,6 +63,9 @@ Matching and confirmation of imported Active Directory identities in Okta:
 Universal Directory user list displaying synced Active Directory source attributes:
 ![Okta Active Profiles](./screenshots/04-okta-active-people.png)
 
+### 5. Audit Logging & System Events
+Okta System Log verifying automated user lifecycle and sync events:
+![Okta System Log](./screenshots/05-okta-system-log.png)
 ### 5. Audit Logging & System Events
 Okta System Log verifying automated user lifecycle and sync events:
 ![Okta System Log](./screenshots/05-okta-system-log.png)
