@@ -52,7 +52,7 @@ Active Directory OU structure, service accounts, and test users in `iam-homelab.
 
 ### 2. Okta AD Agent Connectivity
 Okta AD Agent v3.23.0 running on Azure VM with active outbound status:
-![Okta AD Agent Status](./screenshots/02-okta-agent-operational.png)
+![Okta AD Agent Status](./screenshots/02-okta-ad-agent-operational.png)
 
 ### 3. User Reconciliation & Import
 Matching and confirmation of imported Active Directory identities in Okta:
