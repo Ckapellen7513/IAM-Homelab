@@ -66,8 +66,6 @@ Universal Directory user list displaying synced Active Directory source attribut
 Okta System Log verifying automated user lifecycle and sync events:
 ![Okta System Log](./screenshots/05-okta-system-log.png)
 
-## Bi-Directional Password Workflows & System Log Signatures
-
 
 ---
 
