@@ -44,7 +44,7 @@ graph TD
 ```
 ---
 
-Markdown
+
 ## Proof of Concept & Evidence
 
 ### 1. Active Directory Domain Controller Configuration
@@ -66,6 +66,4 @@ Universal Directory user list displaying synced Active Directory source attribut
 ### 5. Audit Logging & System Events
 Okta System Log verifying automated user lifecycle and sync events:
 ![Okta System Log](./screenshots/05-okta-system-log.png)
-### 5. Audit Logging & System Events
-Okta System Log verifying automated user lifecycle and sync events:
-![Okta System Log](./screenshots/05-okta-system-log.png)
+
